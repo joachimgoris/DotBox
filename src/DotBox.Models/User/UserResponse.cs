@@ -151,4 +151,82 @@ public class Settings
 
     [JsonPropertyName("jdwonloader_notifications")]
     public bool JdownloaderNotifications { get; set; }
+
+    [JsonPropertyName("webhook_notifications")]
+    public bool WebhookNotifications { get; set; }
+
+    [JsonPropertyName("webhook_url")]
+    public required string WebhookUrl { get; set; }
+
+    [JsonPropertyName("telegram_notifications")]
+    public bool TelegramNotifications { get; set; }
+
+    [JsonPropertyName("telegram_id")]
+    public required string TelegramId { get; set; }
+
+    [JsonPropertyName("mega_email")]
+    public string? MegaEmail { get; set; }
+
+    [JsonPropertyName("mega_password")]
+    public string? MegaPassword { get; set; }
+
+    [JsonPropertyName("stremio_sort")]
+    public required string StremioSort { get; set; }
+
+    [JsonPropertyName("dashboard_filter")]
+    public DashboardFilter DashboardFilter { get; set; }
+
+    [JsonPropertyName("dashboard_sort")]
+    public required string DashboardSort { get; set; }
+
+    [JsonPropertyName("cdn_selection")]
+    public required string CdnSelection { get; set; }
+
+    [JsonPropertyName("stremio_use_custom_search_engines")]
+    public bool StremioUseCustomSearchEngines { get; set; }
+
+    [JsonPropertyName("stremio_result_sort")]
+    public required string StremioResultSort { get; set; }
+
+    [JsonPropertyName("webdav_use_local_files")]
+    public bool WebdavUseLocalFiles { get; set; }
+
+    [JsonPropertyName("stremio_legacy_your_media")]
+    public bool StremioLegacyYourMedia { get; set; }
+
+    [JsonPropertyName("stremio_only_your_media_streams")]
+    public bool StremioOnlyYourMediaStreams { get; set; }
+
+    [JsonPropertyName("stremio_disable_your_media_streams")]
+    public bool StremioDisableYourMediaStreams { get; set; }
+
+    [JsonPropertyName("webdav_use_folder_view")]
+    public bool WebdavUseFolderView { get; set; }
+
+    [JsonPropertyName("webdav_flatten")]
+    public bool WebdavFlatten { get; set; }
+
+    [JsonPropertyName("stremio_limit_per_resolution_torrent")]
+    public int StremioLimitPerResolutionTorrent { get; set; }
+
+    [JsonPropertyName("stremio_limit_per_resolution_usenet")]
+    public int StremioLimitPerResolutionUsenet { get; set; }
+
+    [JsonPropertyName("stremio_size_upper")]
+    public int StremioSizeUpper { get; set; }
+
+    [JsonPropertyName("stremio_torrent_seeders_cutoff")]
+    public int StremioTorrentSeedersCutoff { get; set; }
+
+    [JsonPropertyName("pixeldrain_api_key")]
+    public required string PixeldrainApiKey { get; set; }
+
+    [JsonPropertyName("onefichier_api_key")]
+    public required string OnefichierApiKey { get; set; }
+
+    [JsonPropertyName("gofile_api_key")]
+    public required string GofileApiKey { get; set; }
+
+    [JsonPropertyName("patreon_id")]
+    public string? PatreonId { get; set; }
 }
